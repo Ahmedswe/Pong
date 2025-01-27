@@ -111,14 +111,14 @@ class player():
     def draw(self):
         pygame.draw.rect(game_window.background,"white",self.body)
     
-    def first_controller(self):
+    def second_controller(self):
         keys = pygame.key.get_pressed()
         if keys[pygame.K_UP] and self.body.top >= 0 and game_window.begin_game:
             self.body.y -= 7
         elif keys[pygame.K_DOWN] and self.body.bottom <= 550 and game_window.begin_game:
             self.body.y += 7
             
-    def second_controller(self):
+    def first_controller(self):
         keys = pygame.key.get_pressed()
         if keys[pygame.K_w] and self.body.top >= 0 and game_window.begin_game:
             self.body.y -= 7
